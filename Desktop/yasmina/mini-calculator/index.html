@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TAILWIND PLAY CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Mini Calculator</title>
+</head>
+
+<body>
+    <!-- CONTAINER -->
+    <div class="flex justify-center items-center min-h-screen bg-gray-50">
+        <div class="max-w-sm w-full p-4 bg-white rounded-lg shadow-md">
+            <h1 class="text-center pb-4 text-xl font-bold">Mini Calculator</h1>
+            <div class="h-px bg-gray-200 mb-4"></div>
+            <p class="text-center text-gray-500 pb-4">2 sonni kiriting</p>
+            <!-- FORM NUM1 NUM2 -->
+            <form class="flex gap-2 items-center">
+                <input id="num1" type="number" placeholder="Birinchi son"
+                    class="border border-gray-300 rounded-md p-2 w-full outline-none ">
+                <input id="num2" type="number" placeholder="Ikkinchi son"
+                    class="border border-gray-300 rounded-md p-2 w-full outline-none ">
+            </form>
+            <p class="text-gray-500 text-sm py-4">Masalan 10</p>
+            <!-- OPERATOR BUTTONS -->
+            <div id="buttons" class="grid grid-cols-2 gap-2 max-w-[70%] mx-auto">
+                <button data-operator="+"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 ">+</button>
+                <button data-operator="-"
+                    class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700">-</button>
+                <button data-operator="*"
+                    class="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-700">x</button>
+                <button data-operator="/" class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-700">/</button>
+            </div>
+            <div class="h-px bg-gray-200 my-4"></div>
+            <p class="text-gray-900 font-bold flex items-center gap-2">
+                <span>Natija:</span>
+                <!-- RESULT -->
+                <span id="result" class="text-2xl">0</span>
+            </p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
