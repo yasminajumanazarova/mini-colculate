@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- TAILWIND PLAY CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- STYLE -->
+    <style type="text/tailwindcss">
+        @theme {
+            --font-poppins: "Poppins", sans-serif;
+        }
+    </style>
+
+    <title>Landwind</title>
+</head>
+
+<body class="font-poppins">
+    <!-- HEADER -->
+    <header>
+        <div class="max-w-7xl mx-auto">
+            <nav class="flex justify-start items-center gap-8 py-6">
+                <!-- LOGO -->
+                <a href="#">
+                    <img src="./images/logo.svg" alt="logo">
+                </a>
+                <div class="flex flex-1 justify-between">
+                    <!-- NAVLINKS -->
+                    <ul class="flex items-center gap-8 text-gray-900">
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!-- AUTH BUTTONS -->
+                    <div class="flex gap-4 text-[14px]">
+                        <button class="text-gray-900">Login</button>
+                        <button class="py-2 px-3 rounded-lg bg-purple-600 text-white">Get started</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- HERO SECTION -->
+        <section>
+            <div class="max-w-7xl mx-auto flex items-center py-16">
+                <!-- CONTENT SIDE -->
+                <div class="flex flex-col gap-8 flex-1">
+                    <h1 class="font-black text-gray-900 text-6xl leading-16">Building digital products & brands.</h1>
+                    <p class="font-normal text-gray-500 leading-[150%]">Here at flowbite we focus on markets where
+                        technology, innovation, and capital can
+                        unlock
+                        long-term
+                        value and drive economic growth.</p>
+                    <!-- BUTTONS -->
+                    <div class="flex gap-4">
+                        <button class="py-3 px-5 rounded-lg bg-purple-600 text-white">Start 30 day free trial</button>
+                        <button class="py-3 px-5 text-gray-900 border border-gray-200 rounded-lg">Pricing & FAQ</button>
+                    </div>
+                </div>
+                <!-- IMG SIDE -->
+                <div class="flex-1 flex justify-end">
+                    <img class="w-[90%]" src="./images/heroImg.png" alt="hero-img">
+                </div>
+            </div>
+        </section>
+        <!-- COMPANIES SECTION -->
+        <section>
+            <div class="max-w-7xl mx-auto flex items-center justify-between pb-24">
+                <img src="./images/Google.svg" alt="Google">
+                <img src="./images/Microsoft.svg" alt="Microsoft">
+                <img src="./images/Spotify.svg" alt="Spotify">
+                <img src="./images/Mailchimp.svg" alt="Mailchimp">
+                <img src="./images/Airbnb.svg" alt="Airbnb">
+                <img src="./images/Uber.svg" alt="Uber">
+            </div>
+        </section>
+        <!-- FEATURES SECTION -->
+        <section class="bg-gray-50">
+            <div class="max-w-7xl mx-auto py-24 flex flex-col gap-20">
+                <!-- TOP -->
+                <div class=" flex items-center justify-between gap-8">
+                    <!-- CONTENT SIDE -->
+                    <div class="flex-1 flex flex-col gap-6">
+                        <h3 class="text-[36px] text-gray-900 font-black leading-[125%]">Work with tools you already use
+                        </h3>
+                        <p class="text-gray-500 text-xl">Deliver great service experiences fast - without the complexity
+                            of
+                            traditional ITSM
+                            solutions.Accelerate critical development work, eliminate toil, and deploy changes with
+                            ease.
+                        </p>
+                        <div class="h-px bg-gray-200 w-full"></div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.707 6.707C11.8892 6.5184 11.99 6.2658 11.9877 6.0036C11.9854 5.7414 11.8802 5.49059 11.6948 5.30518C11.5094 5.11977 11.2586 5.0146 10.9964 5.01233C10.7342 5.01005 10.4816 5.11084 10.293 5.293L7 8.586L5.707 7.293C5.5184 7.11084 5.2658 7.01005 5.0036 7.01233C4.7414 7.0146 4.49059 7.11977 4.30518 7.30518C4.11977 7.49059 4.0146 7.7414 4.01233 8.0036C4.01005 8.2658 4.11084 8.5184 4.293 8.707L6.293 10.707C6.48053 10.8945 6.73484 10.9998 7 10.9998C7.26516 10.9998 7.51947 10.8945 7.707 10.707L11.707 6.707Z"
+                                        fill="#7E3AF2" />
+                                </svg>
+                                <span class="text-gray-900 leading-[150%]">Continuous integration and deployment</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.707 6.707C11.8892 6.5184 11.99 6.2658 11.9877 6.0036C11.9854 5.7414 11.8802 5.49059 11.6948 5.30518C11.5094 5.11977 11.2586 5.0146 10.9964 5.01233C10.7342 5.01005 10.4816 5.11084 10.293 5.293L7 8.586L5.707 7.293C5.5184 7.11084 5.2658 7.01005 5.0036 7.01233C4.7414 7.0146 4.49059 7.11977 4.30518 7.30518C4.11977 7.49059 4.0146 7.7414 4.01233 8.0036C4.01005 8.2658 4.11084 8.5184 4.293 8.707L6.293 10.707C6.48053 10.8945 6.73484 10.9998 7 10.9998C7.26516 10.9998 7.51947 10.8945 7.707 10.707L11.707 6.707Z"
+                                        fill="#7E3AF2" />
+                                </svg>
+                                <span class="text-gray-900 leading-[150%]">Development workflow</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.707 6.707C11.8892 6.5184 11.99 6.2658 11.9877 6.0036C11.9854 5.7414 11.8802 5.49059 11.6948 5.30518C11.5094 5.11977 11.2586 5.0146 10.9964 5.01233C10.7342 5.01005 10.4816 5.11084 10.293 5.293L7 8.586L5.707 7.293C5.5184 7.11084 5.2658 7.01005 5.0036 7.01233C4.7414 7.0146 4.49059 7.11977 4.30518 7.30518C4.11977 7.49059 4.0146 7.7414 4.01233 8.0036C4.01005 8.2658 4.11084 8.5184 4.293 8.707L6.293 10.707C6.48053 10.8945 6.73484 10.9998 7 10.9998C7.26516 10.9998 7.51947 10.8945 7.707 10.707L11.707 6.707Z"
+                                        fill="#7E3AF2" />
+                                </svg>
+                                <span class="text-gray-900 leading-[150%]">Knowledge management</span>
+                            </li>
+                        </ul>
+                        <p class="text-gray-500 text-xl">Deliver great service experiences fast - without the complexity
+                            of
+                            traditional ITSM solutions.
+                        </p>
+                    </div>
+                    <!-- IMG SIDE -->
+                    <div class="flex-1">
+                        <img class="w-full" src="./images/featuresImage1.png" alt="feature image 1">
+                    </div>
+                </div>
+                <!-- BOTTOM -->
+                <div class="flex flex-row-reverse items-center justify-between gap-8">
+                    <!-- CONTENT SIDE -->
+                    <div class="flex-1 flex flex-col gap-6">
+                        <h3 class="text-[36px] text-gray-900 font-black leading-[125%]">Work with tools you already use
+                        </h3>
+                        <p class="text-gray-500 text-xl">Deliver great service experiences fast - without the complexity
+                            of
+                            traditional ITSM
+                            solutions.Accelerate critical development work, eliminate toil, and deploy changes with
+                            ease.
+                        </p>
+                        <div class="h-px bg-gray-200 w-full"></div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.707 6.707C11.8892 6.5184 11.99 6.2658 11.9877 6.0036C11.9854 5.7414 11.8802 5.49059 11.6948 5.30518C11.5094 5.11977 11.2586 5.0146 10.9964 5.01233C10.7342 5.01005 10.4816 5.11084 10.293 5.293L7 8.586L5.707 7.293C5.5184 7.11084 5.2658 7.01005 5.0036 7.01233C4.7414 7.0146 4.49059 7.11977 4.30518 7.30518C4.11977 7.49059 4.0146 7.7414 4.01233 8.0036C4.01005 8.2658 4.11084 8.5184 4.293 8.707L6.293 10.707C6.48053 10.8945 6.73484 10.9998 7 10.9998C7.26516 10.9998 7.51947 10.8945 7.707 10.707L11.707 6.707Z"
+                                        fill="#7E3AF2" />
+                                </svg>
+                                <span class="text-gray-900 leading-[150%]">Dynamic reports and dashboards</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.707 6.707C11.8892 6.5184 11.99 6.2658 11.9877 6.0036C11.9854 5.7414 11.8802 5.49059 11.6948 5.30518C11.5094 5.11977 11.2586 5.0146 10.9964 5.01233C10.7342 5.01005 10.4816 5.11084 10.293 5.293L7 8.586L5.707 7.293C5.5184 7.11084 5.2658 7.01005 5.0036 7.01233C4.7414 7.0146 4.49059 7.11977 4.30518 7.30518C4.11977 7.49059 4.0146 7.7414 4.01233 8.0036C4.01005 8.2658 4.11084 8.5184 4.293 8.707L6.293 10.707C6.48053 10.8945 6.73484 10.9998 7 10.9998C7.26516 10.9998 7.51947 10.8945 7.707 10.707L11.707 6.707Z"
+                                        fill="#7E3AF2" />
+                                </svg>
+                                <span class="text-gray-900 leading-[150%]">Templates for everyone</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.707 6.707C11.8892 6.5184 11.99 6.2658 11.9877 6.0036C11.9854 5.7414 11.8802 5.49059 11.6948 5.30518C11.5094 5.11977 11.2586 5.0146 10.9964 5.01233C10.7342 5.01005 10.4816 5.11084 10.293 5.293L7 8.586L5.707 7.293C5.5184 7.11084 5.2658 7.01005 5.0036 7.01233C4.7414 7.0146 4.49059 7.11977 4.30518 7.30518C4.11977 7.49059 4.0146 7.7414 4.01233 8.0036C4.01005 8.2658 4.11084 8.5184 4.293 8.707L6.293 10.707C6.48053 10.8945 6.73484 10.9998 7 10.9998C7.26516 10.9998 7.51947 10.8945 7.707 10.707L11.707 6.707Z"
+                                        fill="#7E3AF2" />
+                                </svg>
+                                <span class="text-gray-900 leading-[150%]">Development workflow</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.707 6.707C11.8892 6.5184 11.99 6.2658 11.9877 6.0036C11.9854 5.7414 11.8802 5.49059 11.6948 5.30518C11.5094 5.11977 11.2586 5.0146 10.9964 5.01233C10.7342 5.01005 10.4816 5.11084 10.293 5.293L7 8.586L5.707 7.293C5.5184 7.11084 5.2658 7.01005 5.0036 7.01233C4.7414 7.0146 4.49059 7.11977 4.30518 7.30518C4.11977 7.49059 4.0146 7.7414 4.01233 8.0036C4.01005 8.2658 4.11084 8.5184 4.293 8.707L6.293 10.707C6.48053 10.8945 6.73484 10.9998 7 10.9998C7.26516 10.9998 7.51947 10.8945 7.707 10.707L11.707 6.707Z"
+                                        fill="#7E3AF2" />
+                                </svg>
+                                <span class="text-gray-900 leading-[150%]">Limitless business automation</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8 16C10.1217 16 12.1566 15.1571 13.6569 13.6569C15.1571 12.1566 16 10.1217 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0C5.87827 0 3.84344 0.842855 2.34315 2.34315C0.842855 3.84344 0 5.87827 0 8C0 10.1217 0.842855 12.1566 2.34315 13.6569C3.84344 15.1571 5.87827 16 8 16ZM11.707 6.707C11.8892 6.5184 11.99 6.2658 11.9877 6.0036C11.9854 5.7414 11.8802 5.49059 11.6948 5.30518C11.5094 5.11977 11.2586 5.0146 10.9964 5.01233C10.7342 5.01005 10.4816 5.11084 10.293 5.293L7 8.586L5.707 7.293C5.5184 7.11084 5.2658 7.01005 5.0036 7.01233C4.7414 7.0146 4.49059 7.11977 4.30518 7.30518C4.11977 7.49059 4.0146 7.7414 4.01233 8.0036C4.01005 8.2658 4.11084 8.5184 4.293 8.707L6.293 10.707C6.48053 10.8945 6.73484 10.9998 7 10.9998C7.26516 10.9998 7.51947 10.8945 7.707 10.707L11.707 6.707Z"
+                                        fill="#7E3AF2" />
+                                </svg>
+                                <span class="text-gray-900 leading-[150%]">Knowledge management</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- IMG SIDE -->
+                    <div class="flex-1">
+                        <img class="w-full" src="./images/featureImage2.png" alt="feature image 2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT SECTION -->
+        <section>
+            <div class="max-w-[1440px] mx-auto px-20 py-24 flex items-center justify-between gap-16">
+                <!-- LEFT SIDE -->
+                <div class="flex-3 flex flex-col gap-3">
+                    <p class="text-lg text-purple-600 font-medium">Trusted Worldwide</p>
+                    <h3 class="text-lg text-gray-900 font-extrabold text-[36px]">Trusted by over 600 million users and
+                        10,000 teams
+                    </h3>
+                    <p class="text-xl text-gray-500">Our rigorous security and compliance standards are at the heart of
+                        all we do. We work
+                        tirelessly
+                        to protect you and your customers.</p>
+                    <div class="h-px bg-gray-200"></div>
+                    <ul class="flex flex-col gap-2">
+                        <li class="flex gap-2 items-center">
+                            <a class="text-[16px] text-purple-600 font-medium" href="#">Explore Legality Guide</a>
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 5.66667H1H13Z" fill="#7E3AF2" />
+                                <path d="M8.33333 1L13 5.66667M13 5.66667L8.33333 10.3333M13 5.66667H1" stroke="#7E3AF2"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <a class="text-[16px] text-purple-600 font-medium" href="#">Visit the Trust Center</a>
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 5.66667H1H13Z" fill="#7E3AF2" />
+                                <path d="M8.33333 1L13 5.66667M13 5.66667L8.33333 10.3333M13 5.66667H1" stroke="#7E3AF2"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <!-- RIGHT SIDE -->
+                <div class="grid grid-cols-2 gap-8 flex-2">
+                    <!-- ITEMS -->
+                    <div>
+                        <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 4.8C0 3.52696 0.505713 2.30606 1.40589 1.40589C2.30606 0.505713 3.52696 0 4.8 0H33.6C34.873 0 36.0939 0.505713 36.9941 1.40589C37.8943 2.30606 38.4 3.52696 38.4 4.8V9.6C38.4 10.873 37.8943 12.0939 36.9941 12.9941C36.0939 13.8943 34.873 14.4 33.6 14.4H4.8C3.52696 14.4 2.30606 13.8943 1.40589 12.9941C0.505713 12.0939 0 10.873 0 9.6V4.8ZM33.6 7.2C33.6 7.83652 33.3471 8.44697 32.8971 8.89706C32.447 9.34714 31.8365 9.6 31.2 9.6C30.5635 9.6 29.953 9.34714 29.5029 8.89706C29.0529 8.44697 28.8 7.83652 28.8 7.2C28.8 6.56348 29.0529 5.95303 29.5029 5.50294C29.953 5.05286 30.5635 4.8 31.2 4.8C31.8365 4.8 32.447 5.05286 32.8971 5.50294C33.3471 5.95303 33.6 6.56348 33.6 7.2ZM0 24C0 22.727 0.505713 21.5061 1.40589 20.6059C2.30606 19.7057 3.52696 19.2 4.8 19.2H33.6C34.873 19.2 36.0939 19.7057 36.9941 20.6059C37.8943 21.5061 38.4 22.727 38.4 24V28.8C38.4 30.073 37.8943 31.2939 36.9941 32.1941C36.0939 33.0943 34.873 33.6 33.6 33.6H4.8C3.52696 33.6 2.30606 33.0943 1.40589 32.1941C0.505713 31.2939 0 30.073 0 28.8V24ZM33.6 26.4C33.6 27.0365 33.3471 27.647 32.8971 28.0971C32.447 28.5471 31.8365 28.8 31.2 28.8C30.5635 28.8 29.953 28.5471 29.5029 28.0971C29.0529 27.647 28.8 27.0365 28.8 26.4C28.8 25.7635 29.0529 25.153 29.5029 24.7029C29.953 24.2529 30.5635 24 31.2 24C31.8365 24 32.447 24.2529 32.8971 24.7029C33.3471 25.153 33.6 25.7635 33.6 26.4Z"
+                                fill="#7E3AF2" />
+                        </svg>
+                        <h4 class="text-[24px] text-gray-900 font-bold">99.99% uptime</h4>
+                        <p class="text-gray-500 font-light">for Flowbite, with zero maintenance downtime</p>
+                    </div>
+                    <div>
+                        <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 4.8C0 3.52696 0.505713 2.30606 1.40589 1.40589C2.30606 0.505713 3.52696 0 4.8 0H33.6C34.873 0 36.0939 0.505713 36.9941 1.40589C37.8943 2.30606 38.4 3.52696 38.4 4.8V9.6C38.4 10.873 37.8943 12.0939 36.9941 12.9941C36.0939 13.8943 34.873 14.4 33.6 14.4H4.8C3.52696 14.4 2.30606 13.8943 1.40589 12.9941C0.505713 12.0939 0 10.873 0 9.6V4.8ZM33.6 7.2C33.6 7.83652 33.3471 8.44697 32.8971 8.89706C32.447 9.34714 31.8365 9.6 31.2 9.6C30.5635 9.6 29.953 9.34714 29.5029 8.89706C29.0529 8.44697 28.8 7.83652 28.8 7.2C28.8 6.56348 29.0529 5.95303 29.5029 5.50294C29.953 5.05286 30.5635 4.8 31.2 4.8C31.8365 4.8 32.447 5.05286 32.8971 5.50294C33.3471 5.95303 33.6 6.56348 33.6 7.2ZM0 24C0 22.727 0.505713 21.5061 1.40589 20.6059C2.30606 19.7057 3.52696 19.2 4.8 19.2H33.6C34.873 19.2 36.0939 19.7057 36.9941 20.6059C37.8943 21.5061 38.4 22.727 38.4 24V28.8C38.4 30.073 37.8943 31.2939 36.9941 32.1941C36.0939 33.0943 34.873 33.6 33.6 33.6H4.8C3.52696 33.6 2.30606 33.0943 1.40589 32.1941C0.505713 31.2939 0 30.073 0 28.8V24ZM33.6 26.4C33.6 27.0365 33.3471 27.647 32.8971 28.0971C32.447 28.5471 31.8365 28.8 31.2 28.8C30.5635 28.8 29.953 28.5471 29.5029 28.0971C29.0529 27.647 28.8 27.0365 28.8 26.4C28.8 25.7635 29.0529 25.153 29.5029 24.7029C29.953 24.2529 30.5635 24 31.2 24C31.8365 24 32.447 24.2529 32.8971 24.7029C33.3471 25.153 33.6 25.7635 33.6 26.4Z"
+                                fill="#7E3AF2" />
+                        </svg>
+                        <h4 class="text-[24px] text-gray-900 font-bold">99.99% uptime</h4>
+                        <p class="text-gray-500 font-light">for Flowbite, with zero maintenance downtime</p>
+                    </div>
+                    <div>
+                        <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 4.8C0 3.52696 0.505713 2.30606 1.40589 1.40589C2.30606 0.505713 3.52696 0 4.8 0H33.6C34.873 0 36.0939 0.505713 36.9941 1.40589C37.8943 2.30606 38.4 3.52696 38.4 4.8V9.6C38.4 10.873 37.8943 12.0939 36.9941 12.9941C36.0939 13.8943 34.873 14.4 33.6 14.4H4.8C3.52696 14.4 2.30606 13.8943 1.40589 12.9941C0.505713 12.0939 0 10.873 0 9.6V4.8ZM33.6 7.2C33.6 7.83652 33.3471 8.44697 32.8971 8.89706C32.447 9.34714 31.8365 9.6 31.2 9.6C30.5635 9.6 29.953 9.34714 29.5029 8.89706C29.0529 8.44697 28.8 7.83652 28.8 7.2C28.8 6.56348 29.0529 5.95303 29.5029 5.50294C29.953 5.05286 30.5635 4.8 31.2 4.8C31.8365 4.8 32.447 5.05286 32.8971 5.50294C33.3471 5.95303 33.6 6.56348 33.6 7.2ZM0 24C0 22.727 0.505713 21.5061 1.40589 20.6059C2.30606 19.7057 3.52696 19.2 4.8 19.2H33.6C34.873 19.2 36.0939 19.7057 36.9941 20.6059C37.8943 21.5061 38.4 22.727 38.4 24V28.8C38.4 30.073 37.8943 31.2939 36.9941 32.1941C36.0939 33.0943 34.873 33.6 33.6 33.6H4.8C3.52696 33.6 2.30606 33.0943 1.40589 32.1941C0.505713 31.2939 0 30.073 0 28.8V24ZM33.6 26.4C33.6 27.0365 33.3471 27.647 32.8971 28.0971C32.447 28.5471 31.8365 28.8 31.2 28.8C30.5635 28.8 29.953 28.5471 29.5029 28.0971C29.0529 27.647 28.8 27.0365 28.8 26.4C28.8 25.7635 29.0529 25.153 29.5029 24.7029C29.953 24.2529 30.5635 24 31.2 24C31.8365 24 32.447 24.2529 32.8971 24.7029C33.3471 25.153 33.6 25.7635 33.6 26.4Z"
+                                fill="#7E3AF2" />
+                        </svg>
+                        <h4 class="text-[24px] text-gray-900 font-bold">99.99% uptime</h4>
+                        <p class="text-gray-500 font-light">for Flowbite, with zero maintenance downtime</p>
+                    </div>
+                    <div>
+                        <svg width="39" height="34" viewBox="0 0 39 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 4.8C0 3.52696 0.505713 2.30606 1.40589 1.40589C2.30606 0.505713 3.52696 0 4.8 0H33.6C34.873 0 36.0939 0.505713 36.9941 1.40589C37.8943 2.30606 38.4 3.52696 38.4 4.8V9.6C38.4 10.873 37.8943 12.0939 36.9941 12.9941C36.0939 13.8943 34.873 14.4 33.6 14.4H4.8C3.52696 14.4 2.30606 13.8943 1.40589 12.9941C0.505713 12.0939 0 10.873 0 9.6V4.8ZM33.6 7.2C33.6 7.83652 33.3471 8.44697 32.8971 8.89706C32.447 9.34714 31.8365 9.6 31.2 9.6C30.5635 9.6 29.953 9.34714 29.5029 8.89706C29.0529 8.44697 28.8 7.83652 28.8 7.2C28.8 6.56348 29.0529 5.95303 29.5029 5.50294C29.953 5.05286 30.5635 4.8 31.2 4.8C31.8365 4.8 32.447 5.05286 32.8971 5.50294C33.3471 5.95303 33.6 6.56348 33.6 7.2ZM0 24C0 22.727 0.505713 21.5061 1.40589 20.6059C2.30606 19.7057 3.52696 19.2 4.8 19.2H33.6C34.873 19.2 36.0939 19.7057 36.9941 20.6059C37.8943 21.5061 38.4 22.727 38.4 24V28.8C38.4 30.073 37.8943 31.2939 36.9941 32.1941C36.0939 33.0943 34.873 33.6 33.6 33.6H4.8C3.52696 33.6 2.30606 33.0943 1.40589 32.1941C0.505713 31.2939 0 30.073 0 28.8V24ZM33.6 26.4C33.6 27.0365 33.3471 27.647 32.8971 28.0971C32.447 28.5471 31.8365 28.8 31.2 28.8C30.5635 28.8 29.953 28.5471 29.5029 28.0971C29.0529 27.647 28.8 27.0365 28.8 26.4C28.8 25.7635 29.0529 25.153 29.5029 24.7029C29.953 24.2529 30.5635 24 31.2 24C31.8365 24 32.447 24.2529 32.8971 24.7029C33.3471 25.153 33.6 25.7635 33.6 26.4Z"
+                                fill="#7E3AF2" />
+                        </svg>
+                        <h4 class="text-[24px] text-gray-900 font-bold">99.99% uptime</h4>
+                        <p class="text-gray-500 font-light">for Flowbite, with zero maintenance downtime</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- QUOTE SECTION -->
+        <section class="bg-gray-50">
+            <div class="max-w-[1440px] px-20 py-24 mx-auto flex flex-col items-center gap-6">
+                <svg width="48" height="45" viewBox="0 0 48 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M28.034 36L28.034 21.218C28.034 9.81 35.496 2.078 46 0L47.99 4.302C43.126 6.136 40 11.578 40 16H48V36H28.034ZM0 36V21.218C0 9.81 7.496 2.076 18 0L19.992 4.302C15.126 6.136 12 11.578 12 16H19.966L19.966 36L0 36Z"
+                        fill="#9CA3AF" />
+                </svg>
+                <p class="max-w-3xl mx-auto text-[24px] text-gray-900 text-center">
+                    "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login
+                    screen to complex dashboard. Perfect choice for your next SaaS application."
+                </p>
+                <div class="flex items-center gap-2">
+                    <img src="./images/person.png" alt="">
+                    <h5 class="text-[16px] text-gray-900 font-medium">Micheal Gough / <span
+                            class="text-gray-500 text-sm font-light">CEO at Google</span></h5>
+
+                </div>
+            </div>
+        </section>
+        <!-- PLANS SECTION -->
+        <section>
+            <div class="max-w-[1440px] mx-auto py-24 px-20">
+                <!-- TOP TEXT CONTENT -->
+                <div class="mb-12">
+                    <h3 class="text-[36px] text-gray-900 font-extrabold text-center">Pay as you grow</h3>
+                    <p class="text-lg text-gray-500 font-normal text-center max-w-3xl pt-4 mx-auto">Here at flowbite we
+                        focus on
+                        markets
+                        where technology, innovation, and capital can unlock
+                        long-term value and drive economic growth.</p>
+                </div>
+                <!-- PLANS CONTAINER -->
+                <div class="flex gap-10">
+                    <!-- PLAN CARD -->
+                    <div class="flex flex-col gap-8 p-8 border border-gray-200 rounded-lg">
+                        <div>
+                            <h5 class="text-2xl font-semibold text-center">Starter</h5>
+                            <p class="text-lg text-gray-500 text-center">Great for personal use and for your side
+                                projects.</p>
+                        </div>
+                        <div class="flex items-end justify-center gap-2">
+                            <p class="text-5xl font-extrabold">$49</p>
+                            <p class="text-lg font-medium text-gray-500">/month</p>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                        </ul>
+                        <button class="w-full px-5 py-2 bg-purple-600 text-white rounded-lg">Get started</button>
+                    </div>
+                    <!-- PLAN CARD -->
+                    <div class="flex flex-col gap-8 p-8 border border-gray-200 rounded-lg">
+                        <div>
+                            <h5 class="text-2xl font-semibold text-center">Starter</h5>
+                            <p class="text-lg text-gray-500 text-center">Great for personal use and for your side
+                                projects.</p>
+                        </div>
+                        <div class="flex items-end justify-center gap-2">
+                            <p class="text-5xl font-extrabold">$49</p>
+                            <p class="text-lg font-medium text-gray-500">/month</p>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                        </ul>
+                        <button class="w-full px-5 py-2 bg-purple-600 text-white rounded-lg">Get started</button>
+                    </div>
+                    <!-- PLAN CARD -->
+                    <div class="flex flex-col gap-8 p-8 border border-gray-200 rounded-lg">
+                        <div>
+                            <h5 class="text-2xl font-semibold text-center">Starter</h5>
+                            <p class="text-lg text-gray-500 text-center">Great for personal use and for your side
+                                projects.</p>
+                        </div>
+                        <div class="flex items-end justify-center gap-2">
+                            <p class="text-5xl font-extrabold">$49</p>
+                            <p class="text-lg font-medium text-gray-500">/month</p>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6947 0.292787C13.8822 0.480314 13.9875 0.734622 13.9875 0.999786C13.9875 1.26495 13.8822 1.51926 13.6947 1.70679L5.69471 9.70679C5.50718 9.89426 5.25288 9.99957 4.98771 9.99957C4.72255 9.99957 4.46824 9.89426 4.28071 9.70679L0.280712 5.70679C0.0985537 5.51818 -0.00224062 5.26558 3.78026e-05 5.00339C0.00231622 4.74119 0.107485 4.49038 0.292893 4.30497C0.478301 4.11956 0.729114 4.01439 0.99131 4.01211C1.25351 4.00983 1.50611 4.11063 1.69471 4.29279L4.98771 7.58579L12.2807 0.292787C12.4682 0.105316 12.7225 0 12.9877 0C13.2529 0 13.5072 0.105316 13.6947 0.292787Z"
+                                        fill="#0694A2" />
+                                </svg>
+                                <span class="text-gray-900">Individual configuration</span>
+                            </li>
+                        </ul>
+                        <button class="w-full px-5 py-2 bg-purple-600 text-white rounded-lg">Get started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ SECTION -->
+        <section>
+            <div class="max-w-[1440px] px-20 pb-24 mx-auto">
+                <h3 class="text-[36px] text-gray-900 font-extrabold text-center">Frequently asked questions</h3>
+                <!-- DETAILS -->
+                <div class="mt-8 max-w-3xl mx-auto">
+
+                    <details>
+                        <summary
+                            class=" select-none border-b border-b-gray-200 py-6 list-none flex justify-between items-center"
+                            data-accordion-trigger>
+                            <span class="text-lg font-medium text-gray-500">Why do they call it Ovaltine?</span>
+                            <svg data-accordion-icon width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.3333 1L5.66667 5.66667L1 1" stroke="#6B7280" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </summary>
+                        <div class="mt-6 text-[16px] text-gray-500 font-light">
+                            <p>The mug is round. The jar is round. They should call it Roundtine.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary
+                            class=" select-none border-b border-b-gray-200 py-6 list-none flex justify-between items-center"
+                            data-accordion-trigger>
+                            <span class="text-lg font-medium text-gray-500">Why do they call it Ovaltine?</span>
+                            <svg data-accordion-icon width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.3333 1L5.66667 5.66667L1 1" stroke="#6B7280" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </summary>
+                        <div class="mt-6 text-[16px] text-gray-500 font-light">
+                            <p>The mug is round. The jar is round. They should call it Roundtine.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary
+                            class=" select-none border-b border-b-gray-200 py-6 list-none flex justify-between items-center"
+                            data-accordion-trigger>
+                            <span class="text-lg font-medium text-gray-500">Why do they call it Ovaltine?</span>
+                            <svg data-accordion-icon width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.3333 1L5.66667 5.66667L1 1" stroke="#6B7280" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </summary>
+                        <div class="mt-6 text-[16px] text-gray-500 font-light">
+                            <p>The mug is round. The jar is round. They should call it Roundtine.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary
+                            class=" select-none border-b border-b-gray-200 py-6 list-none flex justify-between items-center"
+                            data-accordion-trigger>
+                            <span class="text-lg font-medium text-gray-500">Why do they call it Ovaltine?</span>
+                            <svg data-accordion-icon width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.3333 1L5.66667 5.66667L1 1" stroke="#6B7280" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </summary>
+                        <div class="mt-6 text-[16px] text-gray-500 font-light">
+                            <p>The mug is round. The jar is round. They should call it Roundtine.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- FREE TRIAL SECTION -->
+        <section class="bg-gray-50">
+            <div class="py-24 px-20 max-w-3xl mx-auto flex flex-col items-center gap-6">
+                <h3 class="text-[36px] text-gray-900 font-extrabold text-center">Start your free trial today</h3>
+                <p class="text-lg text-gray-500 font-normal text-center max-w-3xl mx-auto">Try Flowbite Platform
+                    for 30 days. No credit card required.</p>
+                <button class="py-3 px-5 rounded-lg bg-purple-600 text-white">Free trial for 30 days</button>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="py-16 px-20 max-w-[1440px] mx-auto">
+            <!-- LINKS -->
+            <div class="flex justify-between">
+                <ul class="text-gray-500 text-sm font-light flex flex-col gap-4">
+                    <li class="font-semibold text-[16px] text-gray-900">COMPANY</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                </ul>
+                <ul class="text-gray-500 text-sm font-light flex flex-col gap-4">
+                    <li class="font-semibold text-[16px] text-gray-900">COMPANY</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                </ul>
+                <ul class="text-gray-500 text-sm font-light flex flex-col gap-4">
+                    <li class="font-semibold text-[16px] text-gray-900">COMPANY</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                </ul>
+                <ul class="text-gray-500 text-sm font-light flex flex-col gap-4">
+                    <li class="font-semibold text-[16px] text-gray-900">COMPANY</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                </ul>
+                <ul class="text-gray-500 text-sm font-light flex flex-col gap-4">
+                    <li class="font-semibold text-[16px] text-gray-900">COMPANY</li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Premium</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Get Coupon</a></li>
+                </ul>
+
+            </div>
+            <!-- © 2022 Flowbite, Inc. All rights reserved. -->
+            <div class="max-w-[384px] mx-auto flex flex-col items-center gap-5 pt-16">
+                <img src="./images/logo.svg" alt="logo">
+                <p class="text-gray-500 text-light">© 2022 Flowbite, Inc. All rights reserved.</p>
+                <ul class="flex items-center gap-5">
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.80078 16.7109C8.80078 16.6406 8.73047 16.5703 8.625 16.5703C8.51953 16.5703 8.44922 16.6406 8.44922 16.7109C8.44922 16.7812 8.51953 16.8516 8.625 16.8164C8.73047 16.8164 8.80078 16.7812 8.80078 16.7109ZM7.71094 16.5352C7.71094 16.6055 7.78125 16.7109 7.88672 16.7109C7.95703 16.7461 8.0625 16.7109 8.09766 16.6406C8.09766 16.5703 8.0625 16.5 7.95703 16.4648C7.85156 16.4297 7.74609 16.4648 7.71094 16.5352ZM9.29297 16.5C9.1875 16.5 9.11719 16.5703 9.11719 16.6758C9.11719 16.7461 9.22266 16.7812 9.32812 16.7461C9.43359 16.7109 9.50391 16.6758 9.46875 16.6055C9.46875 16.5352 9.36328 16.4648 9.29297 16.5ZM11.5781 3C6.72656 3 3 6.72656 3 11.5781C3 15.4805 5.42578 18.8203 8.94141 20.0156C9.39844 20.0859 9.53906 19.8047 9.53906 19.5938C9.53906 19.3477 9.53906 18.1523 9.53906 17.4141C9.53906 17.4141 7.07812 17.9414 6.55078 16.3594C6.55078 16.3594 6.16406 15.3398 5.60156 15.0938C5.60156 15.0938 4.79297 14.5312 5.63672 14.5312C5.63672 14.5312 6.51562 14.6016 7.00781 15.4453C7.78125 16.8164 9.04688 16.4297 9.57422 16.1836C9.64453 15.6211 9.85547 15.2344 10.1367 14.9883C8.16797 14.7773 6.16406 14.4961 6.16406 11.1211C6.16406 10.1367 6.44531 9.67969 7.00781 9.04688C6.90234 8.80078 6.62109 7.88672 7.11328 6.65625C7.81641 6.44531 9.53906 7.60547 9.53906 7.60547C10.2422 7.39453 10.9805 7.32422 11.7188 7.32422C12.4922 7.32422 13.2305 7.39453 13.9336 7.60547C13.9336 7.60547 15.6211 6.41016 16.3594 6.65625C16.8516 7.88672 16.5352 8.80078 16.4648 9.04688C17.0273 9.67969 17.3789 10.1367 17.3789 11.1211C17.3789 14.4961 15.3047 14.7773 13.3359 14.9883C13.6523 15.2695 13.9336 15.7969 13.9336 16.6406C13.9336 17.8008 13.8984 19.2773 13.8984 19.5586C13.8984 19.8047 14.0742 20.0859 14.5312 19.9805C18.0469 18.8203 20.4375 15.4805 20.4375 11.5781C20.4375 6.72656 16.4648 3 11.5781 3ZM6.41016 15.1289C6.33984 15.1641 6.375 15.2695 6.41016 15.3398C6.48047 15.375 6.55078 15.4102 6.62109 15.375C6.65625 15.3398 6.65625 15.2344 6.58594 15.1641C6.51562 15.1289 6.44531 15.0938 6.41016 15.1289ZM6.02344 14.8477C5.98828 14.918 6.02344 14.9531 6.09375 14.9883C6.16406 15.0234 6.23438 15.0234 6.26953 14.9531C6.26953 14.918 6.23438 14.8828 6.16406 14.8477C6.09375 14.8125 6.05859 14.8125 6.02344 14.8477ZM7.14844 16.1133C7.11328 16.1484 7.11328 16.2539 7.21875 16.3242C7.28906 16.3945 7.39453 16.4297 7.42969 16.3594C7.46484 16.3242 7.46484 16.2188 7.39453 16.1484C7.32422 16.0781 7.21875 16.043 7.14844 16.1133ZM6.76172 15.5859C6.69141 15.6211 6.69141 15.7266 6.76172 15.7969C6.83203 15.8672 6.90234 15.9023 6.97266 15.8672C7.00781 15.832 7.00781 15.7266 6.97266 15.6562C6.90234 15.5859 6.83203 15.5508 6.76172 15.5859Z"
+                                    fill="#9CA3AF" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.1367 8.62109C19.8398 8.09375 20.4727 7.46094 20.9648 6.72266C20.332 7.00391 19.5938 7.21484 18.8555 7.28516C19.6289 6.82812 20.1914 6.125 20.4727 5.24609C19.7695 5.66797 18.9609 5.98438 18.1523 6.16016C17.4492 5.42188 16.5 5 15.4453 5C13.4062 5 11.7539 6.65234 11.7539 8.69141C11.7539 8.97266 11.7891 9.25391 11.8594 9.53516C8.80078 9.35938 6.05859 7.88281 4.23047 5.66797C3.91406 6.19531 3.73828 6.82812 3.73828 7.53125C3.73828 8.79688 4.37109 9.92188 5.39062 10.5898C4.79297 10.5547 4.19531 10.4141 3.70312 10.1328V10.168C3.70312 11.9609 4.96875 13.4375 6.65625 13.7891C6.375 13.8594 6.02344 13.9297 5.70703 13.9297C5.46094 13.9297 5.25 13.8945 5.00391 13.8594C5.46094 15.3359 6.83203 16.3906 8.44922 16.4258C7.18359 17.4102 5.60156 18.0078 3.87891 18.0078C3.5625 18.0078 3.28125 17.9727 3 17.9375C4.61719 18.9922 6.55078 19.5898 8.66016 19.5898C15.4453 19.5898 19.1367 14 19.1367 9.11328C19.1367 8.9375 19.1367 8.79688 19.1367 8.62109Z"
+                                    fill="#9CA3AF" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.7188 3C6.90234 3 3 6.9375 3 11.7188C3 16.5352 6.90234 20.4375 11.7188 20.4375C16.5 20.4375 20.4375 16.5352 20.4375 11.7188C20.4375 6.9375 16.5 3 11.7188 3ZM17.4492 7.04297C18.5039 8.30859 19.1367 9.92578 19.1367 11.6836C18.8906 11.6133 16.4297 11.1211 13.9688 11.4375C13.7578 10.9453 13.582 10.5234 13.3008 9.96094C16.0781 8.83594 17.3086 7.25391 17.4492 7.04297ZM16.6406 6.16406C16.5 6.375 15.375 7.88672 12.7383 8.87109C11.5078 6.62109 10.1719 4.79297 9.96094 4.51172C12.3164 3.94922 14.8125 4.54688 16.6406 6.16406ZM8.51953 5.00391C8.73047 5.28516 10.0664 7.11328 11.2969 9.32812C7.81641 10.2422 4.75781 10.2422 4.40625 10.207C4.89844 7.92188 6.44531 5.98828 8.51953 5.00391ZM4.26562 11.7539C4.26562 11.6836 4.26562 11.6133 4.26562 11.5078C4.58203 11.543 8.20312 11.5781 11.8945 10.4531C12.1406 10.875 12.3164 11.2969 12.5273 11.7188C9.82031 12.4922 7.35938 14.6719 6.16406 16.7109C4.96875 15.4102 4.26562 13.6523 4.26562 11.7539ZM7.11328 17.625C7.92188 16.043 10.0312 13.9688 13.0195 12.9492C14.0742 15.6562 14.4961 17.9414 14.6016 18.6094C12.2109 19.6289 9.32812 19.3477 7.11328 17.625ZM15.8672 17.9062C15.7969 17.4844 15.375 15.3047 14.4258 12.5977C16.7461 12.2461 18.7852 12.8438 19.0664 12.9141C18.7148 14.9883 17.5195 16.7812 15.8672 17.9062Z"
+                                    fill="#9CA3AF" />
+                            </svg>
+
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0352 13.125L16.5273 9.89062H13.3984V7.78125C13.3984 6.86719 13.8203 6.02344 15.2266 6.02344H16.668V3.24609C16.668 3.24609 15.3672 3 14.1367 3C11.5703 3 9.88281 4.58203 9.88281 7.39453V9.89062H7V13.125H9.88281V21H13.3984V13.125H16.0352Z"
+                                    fill="#9CA3AF" />
+                            </svg>
+
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
